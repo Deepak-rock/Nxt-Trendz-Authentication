@@ -1,1 +1,94 @@
 /* Write your CSS code here */
+.header-sm-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo-header {
+  width: 120px;
+}
+.logout-icon {
+  width: 30px;
+}
+.nav-bar-sm {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6f6ff;
+  padding: 15px 50px;
+}
+.nav-icon{
+  width: 30px;
+}
+.nav-bar-lg{
+  display: none;
+}
+@media screen and (min-width:768px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    width: 768px;
+  }
+  .header-sm-container {
+    display: none;
+  }
+  .nav-bar-sm {
+    display: none;
+  }
+  .nav-bar-lg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-logo-container{
+    width: 50%;
+    margin: 0 20px;
+  }
+  .logo-header {
+    width: 180px;
+  }
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    margin: 0 20px;
+  }
+  .nav-item {
+    font-size: 18px;
+    color: #475569;
+    font-family: 'roboto';
+    cursor: pointer;
+  }
+  .log-out-button {
+    padding: 6px 20px;
+    background-color: #0967d2;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'roboto';
+    cursor: pointer;
+  }
+}
+@media screen and (min-width:1024px) {
+  .header-container {
+    width: 1000px;
+  }
+  .nav-list{
+    gap: 30px;
+  }
+}
+@media screen and (min-width:1400px) {
+  .header-container {
+    width: 1200px;
+  }
+  .nav-item {
+    font-size: 20px;
+  }
+}
