@@ -15,7 +15,7 @@ body {
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
-  .app-container{
+  .app-container {
     flex-direction: row;
     justify-content: center;
   }

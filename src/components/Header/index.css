@@ -17,13 +17,13 @@
   background-color: #e6f6ff;
   padding: 15px 50px;
 }
-.nav-icon{
+.nav-icon {
   width: 30px;
 }
-.nav-bar-lg{
+.nav-bar-lg {
   display: none;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .header-container {
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
     align-items: center;
     width: 100%;
   }
-  .nav-logo-container{
+  .nav-logo-container {
     width: 50%;
     margin: 0 20px;
   }
@@ -76,15 +76,15 @@
     cursor: pointer;
   }
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .header-container {
     width: 1000px;
   }
-  .nav-list{
+  .nav-list {
     gap: 30px;
   }
 }
-@media screen and (min-width:1400px) {
+@media screen and (min-width: 1400px) {
   .header-container {
     width: 1200px;
   }

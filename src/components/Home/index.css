@@ -43,9 +43,9 @@
   align-items: center;
 }
 .home-image-container {
-    display: none;
+  display: none;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .home-container {
     flex-direction: row;
     justify-content: space-between;
@@ -64,11 +64,11 @@
   .home-responsive-container {
     width: 50%;
   }
-  .home-heading{
+  .home-heading {
     text-align: left;
     font-size: 46px;
   }
-  .description{
+  .description {
     text-align: left;
     font-size: 20px;
   }
