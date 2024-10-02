@@ -11,19 +11,17 @@ class LoginForm extends Component {
   state = {
     username: '',
     password: '',
-    errorMassage: false,
+    errorMassage: '',
   }
 
   submitedSuccessfuly = () => {
     const {history} = this.props
-    history.push('/')
+    history.replace('/')
   }
 
   renderError = () => {
     const {errorMassage} = this.state
-    return (
-      <>{errorMassage ? <p className="error">*Username is not found</p> : ''}</>
-    )
+    return <p className="error">{errorMassage}</p>
   }
 
   onChangeUsername = event => {
@@ -49,7 +47,7 @@ class LoginForm extends Component {
     if (response.ok === true) {
       this.submitedSuccessfuly()
     } else {
-      this.setState({errorMassage: true})
+      this.setState({errorMassage: data.error_msg})
     }
   }
 
